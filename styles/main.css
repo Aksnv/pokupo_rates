@@ -228,7 +228,7 @@
     clear: both;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
 
     .main>section {
         padding-bottom: 16px;
@@ -252,6 +252,17 @@
         width: 360px;
     }
 
+    .slider-header::before {
+        position: absolute;
+        top: 542px;
+        left: 0;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 290px;
+        background-color: #f7f5f3;
+    }
+
     .slider-header h1 {
         width: 240px;
         font-size: 30px;
@@ -269,7 +280,7 @@
         height: 31px;
         /* background-image: url(/themes/default/default/images/sprite.png); */
         background-image: url(../images/sprite.png);
-        cursor: pointer;
+        border: none;
     }
 
     .rates_slide__ctrl-left {
@@ -282,10 +293,9 @@
         background-position: -339px -242px; 
     }
 
-    .rates_slide__ctrl-left--disabled,
-    .rates_slide__ctrl-right--disabled {
+    .rates_slide__ctrl-left[disabled="disabled"],
+    .rates_slide__ctrl-right[disabled="disabled"] {
         opacity: 0.5;
-        cursor: default;
     }
 
     .rates .slide {
@@ -300,25 +310,7 @@
     .company .grade-1,
     .company .grade-3 {
         display: none;
-    }  
-
-    /*  .startup .grade-2,
-        .startup .grade-3,
-        .business .grade-2,
-        .business .grade-3,
-        .company .grade-2,
-        .company .grade-3 {
-       display: none;
-        }  */
-
-    /*  .startup .grade-1,
-        .startup .grade-2,
-        .business .grade-1,
-        .business .grade-2,
-        .company .grade-1,
-        .company .grade-2 {
-       display: none;
-        }  */
+    }
 
     .slider .columns.triple .column.first,
     .slider .columns.triple .column.second, 
@@ -353,24 +345,24 @@
         width: 58px;
         height: 51px;
         margin: -23px 0 0 -30px;
-        background-image: url(../images/black.fw-min.fw.png);
-        background-position: -348px -510px;
+        background-image: url(../images/main_sprite.png);
+        background-position: -496px -857px;
     }
 
     .startup .grade-2 .icon {
         width: 80px;
         height: 55px;
         margin: -27px 0 0 -39px;
-        background-image: url(../images/green.fw-min.fw.png);
-        background-position: -320px -495px;
+        background-image: url(../images/main_sprite.png);
+        background-position: -400px -855px;
     }
 
     .startup .grade-3 .icon {
-        width: 117px;
-        height: 88px;
-        margin: -27px 0 0 -37px;
-        background-image: url(../images/orange.fw-min.fw.png);
-        background-position: -320px -495px;
+        width: 100px;
+        height: 75px;
+        margin: -41px 0 0 -49px;
+        background-image: url(../images/main_sprite.png);
+        background-position: -288px -837px;
     }
 
     .startup .grade-1 h2.foremost,
