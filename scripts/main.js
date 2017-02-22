@@ -1,4 +1,4 @@
-/*Слайдер для переключения тарифов*/
+/* Слайдер для тарифов */
 
 (function () {
   
@@ -37,7 +37,6 @@
   });
 
   rightArrow.addEventListener("click", function(event) {
-    /*event.preventDefault();*/
 
     if (document.querySelector(".startup .grade-2").style.display == "block") {
       document.querySelector(".startup .grade-2").style.display = "none";
@@ -60,7 +59,6 @@
   });
 
   leftArrow.addEventListener("click", function(event) {
-    /*event.preventDefault();*/
 
     if (document.querySelector(".startup .grade-2").style.display == "block") {
       document.querySelector(".startup .grade-2").style.display = "none";
@@ -79,9 +77,9 @@
       document.querySelector(".company .grade-2").style.display = "block";
       rightArrow.removeAttribute("disabled");
     }
-    
-    /*menu_hamburger.classList.toggle("page-header__menu-hamburger--active");*/
 
   });
 
 }());
+
+/* END - Слайдер для тарифов */
