@@ -18,7 +18,7 @@
 
 .rates .slide {
     float: none;
-    height: 260px;
+    height: auto;
 }
 
 .rates_slide__ctrl-left,
@@ -379,6 +379,7 @@
         line-height: 20px;
         margin-top: 31px;
         padding-bottom: 22px;
+        text-align: center;
     }
 
     .startup .grade-1 .btn-red.btn-lg,
@@ -403,5 +404,129 @@
         padding-bottom: 0;
     }
 
+}
+
+@media screen and (max-width: 767px) {
+
+    .content.rate {
+        text-align: center;
+    }
+
+    .rates .slider-header h1 {
+        padding-top: 30px;
+    }
+
+    .slider-header h1 {
+        font-weight: 300;
+    }
+
+    .rates .columns.triple .column {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .rates .slider {
+        margin-top: 0;
+    }
+
+    .rates .slide {
+        padding-top: 0;
+    }
+
+    .rates .slide:last-child {
+        padding-bottom: 0;
+    }
+
+    .rate__icon {
+        float: none;
+    }
+
+    .rates_slide__ctrl-left, 
+    .rates_slide__ctrl-right {
+        top: 86px;
+    }
+
+    .startup .grade-1 h2.foremost,
+    .startup .grade-2 h2.foremost,
+    .startup .grade-3 h2.foremost {
+        padding-top: 27px;
+    }
+
+    .startup .rate.grade-1 h2:after,
+    .business .rate.grade-1 h2:after,
+    .company .rate.grade-1 h2:after,
+    .startup .rate.grade-2 h2:after,
+    .business .rate.grade-2 h2:after,
+    .company .rate.grade-2 h2:after,
+    .startup .rate.grade-3 h2:after,
+    .business .rate.grade-3 h2:after,
+    .company .rate.grade-3 h2:after {
+        left: calc(50% - 23px);
+    }
+
+    .rate h2:after {
+        margin-left: 0;
+    }
+
+    .startup .rate h2:after {
+        top: 21px;
+    }
+
+    .business .grade-1 h2.foremost,
+    .company .grade-1 h2.foremost,
+    .business .grade-2 h2.foremost,
+    .company .grade-2 h2.foremost,
+    .business .grade-3 h2.foremost,
+    .company .grade-3 h2.foremost {
+        margin-top: 0;
+        padding-top: 11px;
+    }
+
+}
+
+@media screen and (max-width: 639px) and (min-width: 480px) {
+ 
+    .startup .rate__icon .icon,
+    .business .rate__icon .icon,
+    .company .rate__icon .icon {
+        transform: none;
+    }
+
+    .business .rate .btn,
+    .company .rate .btn {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+
+    .slider-header h1 {
+        min-width: 360px;
+    }
+
+    .slider-header span {
+        display: block;
+    }
+
+    .startup .rate__icon .icon,
+    .business .rate__icon .icon,
+    .company .rate__icon .icon {
+        transform: none;
+    }
+
+    .startup .grade-1 .btn-red.btn-lg, 
+    .startup .grade-2 .btn-red.btn-lg, 
+    .startup .grade-3 .btn-red.btn-lg {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .business .btn-red.btn-lg, 
+    .company .btn-red.btn-lg {
+        width: 160px;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
 
 }
