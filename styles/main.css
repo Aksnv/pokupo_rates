@@ -536,10 +536,6 @@
 
 /* Стили для таблицы с тарифами */
 
-.main > section.rates-table {
-    padding-bottom: 0;
-}
-
 .rates-table__controls {
     display: -webkit-flex;
     display: -moz-flex;
@@ -634,8 +630,9 @@
 }
 
 .rates-table__item-inner_payment-system {
-    width: 370px;
+    width: 350px;
     padding-left: 50px;
+    padding-right: 20px;
 }
 
 .rates-table__item-inner_commission,
@@ -653,6 +650,18 @@
     margin-right: 60px;
 }
 
+.rates-table__item-inner a {
+    line-height: 18px;
+    color: #02903c;
+}
 
+.rates-table__item-inner a:hover,
+.rates-table__item-inner a:focus {
+    color: #ffa800;
+}
+
+.rates-table__item-inner b {
+    padding-left: 5px;
+}
 
 /* END - Стили для таблицы с тарифами */

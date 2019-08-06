@@ -83,3 +83,26 @@
 }());
 
 /* END - Слайдер для тарифов */
+
+/* Табы для тарифов */
+
+var personRatesButton = document.querySelector(".rates-table__item_person");
+var companyRatesButton = document.querySelector(".rates-table__item_company");
+var personRatesTable = document.querySelector(".rates-table__items-wrapper_person");
+var companyRatesTable = document.querySelector(".rates-table__items-wrapper_company");
+
+personRatesButton.addEventListener("click", function() {
+  this.classList.add("rates-table__item_active");
+  personRatesTable.classList.add("rates-table__items-wrapper_active");
+  companyRatesButton.classList.remove("rates-table__item_active");
+  companyRatesTable.classList.remove("rates-table__items-wrapper_active");
+});
+
+companyRatesButton.addEventListener("click", function() {
+  this.classList.add("rates-table__item_active");
+  companyRatesTable.classList.add("rates-table__items-wrapper_active");
+  personRatesButton.classList.remove("rates-table__item_active");
+  personRatesTable.classList.remove("rates-table__items-wrapper_active");
+});
+
+/* END - Табы для тарифов */
