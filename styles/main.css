@@ -532,3 +532,127 @@
 }
 
 /* END - Новые стили для страницы Тарифы */
+
+
+/* Стили для таблицы с тарифами */
+
+.main > section.rates-table {
+    padding-bottom: 0;
+}
+
+.rates-table__controls {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.rates-table__item {
+    position: relative;
+
+    padding-left: 85px;
+
+    font-size: 20px;
+    line-height: 60px;
+    font-weight: 800;
+    color: #999999;
+
+    cursor: pointer;
+}
+
+.rates-table__item_active,
+.rates-table__item:hover,
+.rates-table__item:focus {
+    color: #02903c;
+}
+
+.rates-table__item:first-child {
+    margin-right: 85px;
+}
+
+.rates-table__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5px;
+
+    display: block;
+    width: 60px;
+    height: 60px;
+    
+    background-color: #999999;
+    border-radius: 50%;
+}
+
+.rates-table__item_active::before,
+.rates-table__item:hover::before,
+.rates-table__item:focus::before {
+    background-color: #02903c;
+}
+
+.rates-table__content {
+    background-color: #f2ede7;
+}
+
+.rates-table__items-wrapper {
+    display: none;
+}
+
+.rates-table__items-wrapper_active {
+    display: block;
+}
+
+.rates-table__item-wrapper {
+    border-bottom: 1px solid #d9d4ce;
+}
+
+.rates-table__items-inner {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70px;
+}
+
+.rates-table__item-inner {
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+    align-items: center;
+
+    text-align: left;
+}
+
+.rates-table__item-inner_payment-system {
+    width: 370px;
+    padding-left: 50px;
+}
+
+.rates-table__item-inner_commission,
+.rates-table__item-inner_sum_min,
+.rates-table__item-inner_sum_max {
+    width: 165px;
+}
+
+.rates-table__item-inner img {
+    display: block;
+    width: auto;
+    max-width: 110px;
+    height: auto;
+    max-height: 60px;
+    margin-right: 60px;
+}
+
+
+
+/* END - Стили для таблицы с тарифами */

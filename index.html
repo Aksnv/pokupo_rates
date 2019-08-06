@@ -364,101 +364,134 @@
       </section>
 
       <section class="rates-table">
-          <div class="container">
-              <ul class="rates-table__controls">
-                  <li>Физлица</li>
-                  <li>Организации</li>
-              </ul>
-              <div class="rates-table__content">
-                <table class="rates-table__tariffs rates-table__tariffs_person">
-                    <th>
-                        <td>Платежная система</td>
-                        <td>Комиссия</td>
-                        <td>Мин. сумма</td>
-                        <td>Макс. сумма</td>
-                    </th>
-                    <tr>
-                        <td><a href="#" target="_blank">Альфа-клик</a></td>
-                        <td>Комиссии нет</td>
-                        <td>до 30 т.р.</td>
-                        <td>до 30 т.р.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#" target="_blank">Тинькофф</a></td>
-                        <td>Комиссия <b>1,5%</b></td>
-                        <td>30 т.р.-100 т.р.</td>
-                        <td>30 т.р.-100 т.р.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#" target="_blank">Русский стандарт</a></td>
-                        <td>Комиссия <b>1,5%</b></td>
-                        <td>30 т.р.-100 т.р.</td>
-                        <td>30 т.р.-100 т.р.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#" target="_blank">Промсвязьбанк</a></td>
-                        <td>Комиссия <b>1,5%</b></td>
-                        <td>30 т.р.-100 т.р.</td>
-                        <td>30 т.р.-100 т.р.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#" target="_blank">ВТБ24</a></td>
-                        <td>Комиссия <b>1,5%</b></td>
-                        <td>30 т.р.-100 т.р.</td>
-                        <td>30 т.р.-100 т.р.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#" target="_blank">Сбербанк</a></td>
-                        <td>Комиссия <b>1,5%</b></td>
-                        <td>30 т.р.-100 т.р.</td>
-                        <td>30 т.р.-100 т.р.</td>
-                    </tr>
-                </table>
-                <table class="rates-table__tariffs rates-table__tariffs_company">
-                    <th>
-                        <td>Платежная система</td>
-                        <td>Комиссия</td>
-                        <td>Мин. сумма</td>
-                        <td>Макс. сумма</td>
-                    </th>
-                    <tr>
-                        <td><a href="#" target="_blank">Альфа-клик</a></td>
-                        <td>Комиссии нет</td>
-                        <td>до 30 т.р.</td>
-                        <td>до 30 т.р.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#" target="_blank">Тинькофф</a></td>
-                        <td>Комиссия <b>1,5%</b></td>
-                        <td>30 т.р.-100 т.р.</td>
-                        <td>30 т.р.-100 т.р.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#" target="_blank">Русский стандарт</a></td>
-                        <td>Комиссия <b>1,5%</b></td>
-                        <td>30 т.р.-100 т.р.</td>
-                        <td>30 т.р.-100 т.р.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#" target="_blank">Промсвязьбанк</a></td>
-                        <td>Комиссия <b>1,5%</b></td>
-                        <td>30 т.р.-100 т.р.</td>
-                        <td>30 т.р.-100 т.р.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#" target="_blank">ВТБ24</a></td>
-                        <td>Комиссия <b>1,5%</b></td>
-                        <td>30 т.р.-100 т.р.</td>
-                        <td>30 т.р.-100 т.р.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#" target="_blank">Сбербанк</a></td>
-                        <td>Комиссия <b>1,5%</b></td>
-                        <td>30 т.р.-100 т.р.</td>
-                        <td>30 т.р.-100 т.р.</td>
-                    </tr>
-                </table>
-              </div>
+          <ul class="rates-table__controls">
+              <li class="rates-table__item rates-table__item_person rates-table__item_active">Физлица</li>
+              <li class="rates-table__item rates-table__item_company">Организации</li>
+          </ul>
+          <div class="rates-table__content">
+            <ul class="rates-table__items-wrapper rates-table__items-wrapper_active">
+                <li class="rates-table__item-wrapper">
+                    <ul class="rates-table__items-inner">
+                        <li class="rates-table__item-inner rates-table__item-inner_payment-system">Платежная система</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_commission">Комиссия</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_min">Мин. сумма</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_max">Макс. сумма</li>
+                    </ul>
+                </li>
+                <li class="rates-table__item-wrapper">
+                    <ul class="rates-table__items-inner">
+                        <li class="rates-table__item-inner rates-table__item-inner_payment-system"><a href="#" target="_blank">Альфа-клик</a></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_commission">Комиссии нет</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_min">до 30 т.р.</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_max">до 30 т.р.</li>
+                    </ul>
+                </li>
+                <li class="rates-table__item-wrapper">
+                    <ul class="rates-table__items-inner">
+                        <li class="rates-table__item-inner rates-table__item-inner_payment-system"><a href="#" target="_blank">Тинькофф</a></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_commission">Комиссия <b>1,5%</b></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_min">30 т.р.-100 т.р.</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_max">30 т.р.-100 т.р.</li>
+                    </ul>
+                </li>
+                <li class="rates-table__item-wrapper">
+                    <ul class="rates-table__items-inner">
+                        <li class="rates-table__item-inner rates-table__item-inner_payment-system"><a href="#" target="_blank">Русский стандарт</a></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_commission">Комиссия <b>1,5%</b></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_min">30 т.р.-100 т.р.</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_max">30 т.р.-100 т.р.</li>
+                    </ul>
+                </li>
+                <li class="rates-table__item-wrapper">
+                    <ul class="rates-table__items-inner">
+                        <li class="rates-table__item-inner rates-table__item-inner_payment-system"><a href="#" target="_blank">Промсвязьбанк</a></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_commission">Комиссия <b>1,5%</b></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_min">30 т.р.-100 т.р.</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_max">30 т.р.-100 т.р.</li>
+                    </ul>
+                </li>
+                <li class="rates-table__item-wrapper">
+                    <ul class="rates-table__items-inner">
+                        <li class="rates-table__item-inner rates-table__item-inner_payment-system"><a href="#" target="_blank">ВТБ24</a></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_commission">Комиссия <b>1,5%</b></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_min">30 т.р.-100 т.р.</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_max">30 т.р.-100 т.р.</li>
+                    </ul>
+                </li>
+                <li class="rates-table__item-wrapper">
+                    <ul class="rates-table__items-inner">
+                        <li class="rates-table__item-inner rates-table__item-inner_payment-system">
+                            <!-- <img src="images/icons/071.png" alt="Сбербанк"> -->
+                            <a href="#" target="_blank">Сбербанк</a>
+                        </li>
+                        <li class="rates-table__item-inner rates-table__item-inner_commission">Комиссия <b>1,5%</b></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_min">30 т.р.-100 т.р.</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_max">30 т.р.-100 т.р.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="rates-table__items-wrapper">
+                <li class="rates-table__item-wrapper">
+                    <ul class="rates-table__items-inner">
+                        <li class="rates-table__item-inner rates-table__item-inner_payment-system">Платежная система</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_commission">Комиссия</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_min">Мин. сумма</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_max">Макс. сумма</li>
+                    </ul>
+                </li>
+                <li class="rates-table__item-wrapper">
+                    <ul class="rates-table__items-inner">
+                        <li class="rates-table__item-inner rates-table__item-inner_payment-system"><a href="#" target="_blank">Альфа-клик</a></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_commission">Комиссии нет</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_min">до 30 т.р.</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_max">до 30 т.р.</li>
+                    </ul>
+                </li>
+                <li class="rates-table__item-wrapper">
+                    <ul class="rates-table__items-inner">
+                        <li class="rates-table__item-inner rates-table__item-inner_payment-system"><a href="#" target="_blank">Тинькофф</a></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_commission">Комиссия <b>1,5%</b></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_min">30 т.р.-100 т.р.</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_max">30 т.р.-100 т.р.</li>
+                    </ul>
+                </li>
+                <li class="rates-table__item-wrapper">
+                    <ul class="rates-table__items-inner">
+                        <li class="rates-table__item-inner rates-table__item-inner_payment-system"><a href="#" target="_blank">Русский стандарт</a></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_commission">Комиссия <b>1,5%</b></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_min">30 т.р.-100 т.р.</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_max">30 т.р.-100 т.р.</li>
+                    </ul>
+                </li>
+                <li class="rates-table__item-wrapper">
+                    <ul class="rates-table__items-inner">
+                        <li class="rates-table__item-inner rates-table__item-inner_payment-system"><a href="#" target="_blank">Промсвязьбанк</a></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_commission">Комиссия <b>1,5%</b></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_min">30 т.р.-100 т.р.</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_max">30 т.р.-100 т.р.</li>
+                    </ul>
+                </li>
+                <li class="rates-table__item-wrapper">
+                    <ul class="rates-table__items-inner">
+                        <li class="rates-table__item-inner rates-table__item-inner_payment-system"><a href="#" target="_blank">ВТБ24</a></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_commission">Комиссия <b>1,5%</b></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_min">30 т.р.-100 т.р.</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_max">30 т.р.-100 т.р.</li>
+                    </ul>
+                </li>
+                <li class="rates-table__item-wrapper">
+                    <ul class="rates-table__items-inner">
+                        <li class="rates-table__item-inner rates-table__item-inner_payment-system">
+                            <!-- <img src="images/icons/071.png" alt="Сбербанк"> -->
+                            <a href="#" target="_blank">Сбербанк</a>
+                        </li>
+                        <li class="rates-table__item-inner rates-table__item-inner_commission">Комиссия <b>1,5%</b></li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_min">30 т.р.-100 т.р.</li>
+                        <li class="rates-table__item-inner rates-table__item-inner_sum_max">30 т.р.-100 т.р.</li>
+                    </ul>
+                </li>
+            </ul>
           </div>
       </section>
 
