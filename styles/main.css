@@ -591,6 +591,25 @@
     background-color: #02903c;
 }
 
+.rates-table__item::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 20px;
+
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.rates-table__item_person::after {
+    background-image: url(../images/person-icon.svg);
+}
+
+.rates-table__item_company::after {
+    background-image: url(../images/company-icon.svg);
+}
+
 .rates-table__content {
     background-color: #f2ede7;
 }
@@ -604,7 +623,30 @@
 }
 
 .rates-table__item-wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+
     border-bottom: 1px solid #d9d4ce;
+}
+
+.rates-table__item-wrapper_bold {
+    font-weight: 700;
+}
+
+.rates-table__item-wrapper_orange {
+    background-color: #ffa800;
+}
+
+.rates-table__item-wrapper_green {
+    color: #ffffff;
+
+    background-color: #018f3c;
 }
 
 .rates-table__items-inner {
@@ -616,6 +658,9 @@
     justify-content: center;
     align-items: center;
     min-height: 70px;
+    padding: 10px 0;
+
+    line-height: 20px;
 }
 
 .rates-table__item-inner {
@@ -636,6 +681,7 @@
 }
 
 .rates-table__item-inner_commission,
+.rates-table__item-inner_commission_min,
 .rates-table__item-inner_sum_min,
 .rates-table__item-inner_sum_max {
     width: 165px;
