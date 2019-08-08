@@ -632,6 +632,8 @@
     align-items: center;
     min-height: 40px;
 
+    line-height: 20px;
+
     border-bottom: 1px solid #d9d4ce;
 }
 
@@ -704,6 +706,109 @@
 .rates-table__item-inner a:hover,
 .rates-table__item-inner a:focus {
     color: #ffa800;
+}
+
+@media screen and (max-width: 1023px) {
+
+    section.rates-table {
+        display: block;
+    }
+
+    .rates-table__item-inner_payment-system {
+        width: 190px;
+        padding-left: 0;
+    }
+
+    .rates-table__item-inner_commission, 
+    .rates-table__item-inner_commission_min, 
+    .rates-table__item-inner_sum_min, 
+    .rates-table__item-inner_sum_max {
+        width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 649px) {
+
+    .rates-table {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .rates-table__item {
+        padding-left: 0;
+        padding-top: 60px;
+    }
+
+    .rates-table__item:first-child {
+        margin-right: 30px;
+    }
+
+    .rates-table__item::before {
+        left: calc(50% - 30px);
+    }
+
+    .rates-table__item::after {
+        left: calc(50% - 15px);
+    }
+
+    .rates-table__item-wrapper {
+        padding: 0 20px;
+    }
+
+    .rates-table__item-wrapper:first-child {
+        display: none;
+    }
+
+    .rates-table__items-inner {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 280px;
+    }
+
+    .rates-table__item-inner {
+        position: relative;
+
+        margin-bottom: 10px;
+    }
+
+    .rates-table__item-inner::before {
+        margin-right: 5px;
+    }
+
+    .rates-table__item-inner_payment-system {
+        width: 100%;
+        padding-right: 0;
+
+        font-weight: 700;
+    }
+
+    .rates-table__item-inner_commission,
+    .rates-table__item-inner_commission_min,
+    .rates-table__item-inner_sum_min,
+    .rates-table__item-inner_sum_max {
+        width: 100%;
+    }
+
+    .rates-table__item-inner_commission::before {
+        content: "Комиссия:"; 
+    }
+
+    .rates-table__item-inner_commission_min::before {
+        content: "Мин. комиссия:"; 
+    }
+
+    .rates-table__item-inner_sum_min::before {
+        content: "Мин. сумма оплаты:"; 
+    }
+
+    .rates-table__item-inner_sum_max::before {
+        content: "Макс. сумма оплаты:"; 
+    }
+
 }
 
 /* END - Стили для таблицы с тарифами */
