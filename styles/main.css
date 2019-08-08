@@ -753,7 +753,7 @@
     }
 
     .rates-table__item-wrapper {
-        padding: 0 20px;
+        padding: 10px 20px;
     }
 
     .rates-table__item-wrapper:first-child {
